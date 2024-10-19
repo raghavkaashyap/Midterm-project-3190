@@ -3,7 +3,6 @@
     {
       "movieId": "1234",
       "title": "Oppenheimer",
-      "year": 2012,
       "url": "./Images/Oppenheimer.jpg",
       "price": 5,
       "description":"science true story drama"
@@ -11,7 +10,6 @@
     {
       "movieId": "A124",
       "title": "The Martian",
-      "year": 2005,
       "url": "./Images/Martian.jpg",
       "price": 5,
       "description":"space survival rescue astronaut mars science fiction"
@@ -19,7 +17,6 @@
     {
       "movieId": "76788",
       "title": "The Iron Giant",
-      "year": 1999,
       "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/The_Iron_Giant_poster.JPG/220px-The_Iron_Giant_poster.JPG",
       "price": 51,
       "description":"love fantasy hero rural area town military"
@@ -27,7 +24,6 @@
     {
       "movieId": "BB124",
       "title": "Black Panther",
-      "year": 1998,
       "url": "./Images/BlackPanther.jpg",
       "price": 53,
       "description":"marvel hero action"
@@ -35,7 +31,6 @@
     {
       "movieId": "12345",
       "title": "Batman",
-      "year": 2001,
       "url": "./Images/Batman.jpg",
       "price": 54,
       "description": "hero action dc"
@@ -43,7 +38,6 @@
     {
       "movieId": "10983",
       "title": "Jaws",
-      "year": 2001,
       "url": "./Images/Jaws.jpg",
       "price": 54,
       "description": "horror action thriller"

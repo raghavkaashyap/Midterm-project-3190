@@ -87,7 +87,15 @@ function loadMovies(movies, option) {
   <div class="card shadow-sm">
   <img src=${url} class="card-img-top" alt="..."></img>
   <div class="card-body">
-  <p class="card-text"> <strong>${title}</strong>, ${year}</p>
+  <p class="card-text"> <strong>${title}</strong></p>
+  <div class="gap-2 justify-content-center align-items-center">
+                <div class="btn-group flex-wrap">
+                  <button type="button" class="text-nowrap">11:40 AM</button>
+                  <button type="button" class="text-nowrap">2:10 PM</button>
+                  <button type="button" class="text-nowrap">4:40 PM</button>
+                  <button type="button" class="text-nowrap">7:10 PM</button>
+                  <button type="button" class="text-nowrap">9:40 PM</button>
+                </div>
   </div>
   </div>
   `;
