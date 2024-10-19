@@ -9,14 +9,14 @@ function showCardsContainingDescriptionA() {
 }
 
 function showCardsContainingDescriptionB() {
-  fetch("./MoviesFromJSON.json")
+  fetch("./data.json")
     .then((response) => response.json())
     .then((myMovies) => loadMovies(myMovies, 3))
     .catch((err) => console.log("Error :" + err));
 }
 
 function showCardsSortedByPriceLowHigh() {
-  fetch("./MoviesFromJSON.json")
+  fetch("./data.json")
     .then(function (response) {
       return response.json();
     })
@@ -30,7 +30,7 @@ function showCardsSortedByPriceLowHigh() {
 }
 
 function showCardsSortedByPriceHighLow() {
-  fetch("./MoviesFromJSON.json")
+  fetch("./data.json")
     .then(function (response) {
       return response.json();
     })
@@ -97,3 +97,5 @@ function loadMovies(movies, option) {
 
   
 }
+
+showCardsSortedByPriceHighLow();
