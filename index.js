@@ -4,7 +4,7 @@
  */
 
 function showCardsContainingDescriptionA() {
-  const inputField = document.getElementById("inputField");
+  const inputField = document.getElementById("descriptionInput");
   inputField.style.display = "block";
 }
 
@@ -60,7 +60,7 @@ function loadMovies(movies, option) {
     );
   } else if (option === 3) {
     const inputDescription = document.getElementById("descriptionInput").value;
-    document.getElementById("inputField").style.display = "none";
+    document.getElementById("descriptionInput").value = "";
     for (let movie of arrayMovies) {
       if (movie.description.includes(inputDescription)) {
         sortedMovies.push(movie);
