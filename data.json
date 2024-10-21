@@ -4,42 +4,42 @@
       "movieId": "1234",
       "title": "Oppenheimer",
       "url": "./Images/Oppenheimer.jpg",
-      "price": 5,
+      "price": 7.00,
       "description":"science true story drama"
     },
     {
       "movieId": "A124",
       "title": "The Martian",
       "url": "./Images/Martian.jpg",
-      "price": 5,
+      "price": 5.50,
       "description":"space survival rescue astronaut mars science fiction"
     },
     {
       "movieId": "76788",
       "title": "The Iron Giant",
       "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/The_Iron_Giant_poster.JPG/220px-The_Iron_Giant_poster.JPG",
-      "price": 51,
+      "price": 4.75,
       "description":"love fantasy hero rural area town military"
     },
     {
       "movieId": "BB124",
       "title": "Black Panther",
       "url": "./Images/BlackPanther.jpg",
-      "price": 53,
+      "price": 6.00,
       "description":"marvel hero action"
     },
     {
       "movieId": "12345",
       "title": "Batman",
       "url": "./Images/Batman.jpg",
-      "price": 54,
+      "price": 6.50,
       "description": "hero action dc"
     },
     {
       "movieId": "10983",
       "title": "Jaws",
       "url": "./Images/Jaws.jpg",
-      "price": 54,
+      "price": 5.75,
       "description": "horror action thriller"
     }
   ]

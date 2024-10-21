@@ -1,8 +1,3 @@
-/**Caleb Iddings
- * ciddings@iastate.edu
- * Oct 2, 2024
- */
-
 function showCardsContainingDescriptionA() {
   const inputField = document.getElementById("descriptionInput");
   inputField.style.display = "block";
@@ -68,42 +63,48 @@ function loadMovies(movies, option) {
     }
   }
 
-  //const m = document.getElementById("selectedMovie");
-  //const inputMovieName = m.value;
+
   var CardMovie = document.getElementById("col");
 
-  // Clear previous movie data
   CardMovie.innerHTML = "";
 
   for (let i = 0; i < sortedMovies.length; i++) {
     let title = sortedMovies[i].title;
-    let year = sortedMovies[i].year;
     let url = sortedMovies[i].url;
     let price = sortedMovies[i].price;
-    // construct the HTML element
     let AddCardMovie = document.createElement("div");
-    AddCardMovie.classList.add("col"); // Add Bootstrap class to the column
+    AddCardMovie.classList.add("col");
     AddCardMovie.innerHTML = `
-  <div class="card shadow-sm">
-  <img src=${url} class="card-img-top" alt="..."></img>
-  <div class="card-body">
-  <p class="card-text"> <strong>${title}</strong></p>
-  <div class="gap-2 justify-content-center align-items-center">
-                <div class="btn-group flex-wrap">
-                  <button type="button" class="text-nowrap">11:40 AM</button>
-                  <button type="button" class="text-nowrap">2:10 PM</button>
-                  <button type="button" class="text-nowrap">4:40 PM</button>
-                  <button type="button" class="text-nowrap">7:10 PM</button>
-                  <button type="button" class="text-nowrap">9:40 PM</button>
-                </div>
-  </div>
-  </div>
-  `;
+      <div class="card shadow-sm">
+        <img src=${url} class="card-img-top" alt="..."></img>
+        <div class="card-body">
+          <p class="card-text"> <strong>${title}</strong></p>
+          <div class="gap-2 justify-content-center align-items-center">
+            <div class="btn-group flex-wrap">
+              <button type="button" class="text-nowrap" onclick="navigateToPayment('${title}', '11:40 AM', ${price}, '${url}')">11:40 AM</button>
+              <button type="button" class="text-nowrap" onclick="navigateToPayment('${title}', '2:10 PM', ${price}, '${url}')">2:10 PM</button>
+              <button type="button" class="text-nowrap" onclick="navigateToPayment('${title}', '4:40 PM', ${price}, '${url}')">4:40 PM</button>
+              <button type="button" class="text-nowrap" onclick="navigateToPayment('${title}', '7:10 PM', ${price}, '${url}')">7:10 PM</button>
+              <button type="button" class="text-nowrap" onclick="navigateToPayment('${title}', '9:40 PM', ${price}, '${url}')">9:40 PM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
     CardMovie.appendChild(AddCardMovie);
-    // end of if
-  } // end of for
-
+  }
   
+}
+
+function navigateToPayment(title, time, price, url) {
+  const numTickets = prompt("Enter the number of tickets:");
+
+  if (isNaN(numTickets) || numTickets <= 0) {
+    alert("Please enter a valid number of tickets.");
+    return;
+  }
+  const totalPrice = numTickets * price;
+  window.location.href = `payments.html?title=${encodeURIComponent(title)}&time=${encodeURIComponent(time)}&price=${encodeURIComponent(totalPrice)}&url=${encodeURIComponent(url)}&tickets=${encodeURIComponent(numTickets)}`;
 }
 
 showCardsSortedByPriceHighLow();
