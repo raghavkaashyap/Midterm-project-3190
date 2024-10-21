@@ -3,6 +3,12 @@
     justify-content: center;
     margin-top: 20px;
 }
+header {
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+    padding: 20px;
+    text-align: left;
+}
 
 .card {
     width: 300px;  
@@ -11,6 +17,21 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: #f8f9fa;
+}
+
+.nav-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    
+}
+
+.payment-header{
+    text-align: center;
+    background-color: #1f1f1f; 
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .card img {
@@ -26,6 +47,7 @@
 .card-text {
     margin-bottom: 10px;
     font-size: 16px;
+    color: #024277;
 }
 
 button {
@@ -45,15 +67,12 @@ button:hover {
     background-color: #0056b3;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 header nav a {
     text-decoration: none;
     color: #007bff;
     font-size: 18px;
+    text-align: left;
 }
 
 header nav a:hover {
@@ -65,4 +84,12 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #888;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #e0e0e0;
 }

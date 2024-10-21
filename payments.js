@@ -13,7 +13,7 @@ const movieCard = `
         <p class="card-text"><strong>${title}</strong></p>
         <p class="card-text">Showtime: ${time}</p>
         <p class="card-text">Tickets: ${tickets}</p>
-        <p class="card-text">Total Price: $${price}</p>
+        <p class="card-text">Total Price: $${price.toFixed(2)}</p>
     </div>
     </div>
 `;
